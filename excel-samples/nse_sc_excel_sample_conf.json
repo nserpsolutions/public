@@ -1,7 +1,7 @@
 {
-	"baseUrl": "./",
-	"paths": {
-		"jszip": "/SuiteScripts/Libraries/External/jszip",
-		"xlsx": "/SuiteScripts/Libraries/External/xlsx"
-	}
+  "baseUrl": "./",
+  "paths": {
+    "jszip": "/SuiteScripts/Libraries/External/jszip",
+    "xlsx": "/SuiteScripts/Libraries/External/xlsx"
+  }
 }
