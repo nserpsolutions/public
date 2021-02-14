@@ -17,6 +17,8 @@
 
 define(['N/search', 'N/file', 'jszip', 'xlsx'],
   function (search, file, JSZIP, XLSX) {
+  const FOLDER_ID = 4774848;
+  
   /**
    * @function searchToAoa
    * @description Runs a search and generates array based on the result set. Limited to searches that return up to 4000 results.
@@ -144,7 +146,7 @@ define(['N/search', 'N/file', 'jszip', 'xlsx'],
         rows: searchData
       })
 
-      let fileId = createExcelFile(excelObject, 4774848, "Customers");
+      let fileId = createExcelFile(excelObject, FOLDER_ID, "Customers");
       let excelJsonData = excelFileToJson(fileId, {Customers: headerLine});
     }
   };
