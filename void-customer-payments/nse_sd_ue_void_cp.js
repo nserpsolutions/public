@@ -18,8 +18,6 @@ define(function () {
        var customerName = cRecord.getText({
          fieldId: 'customer'
        });
-       if(customerName.indexOf('ICC') == 0)
-        return;
 
        var lineCount = cRecord.getLineCount({
          sublistId: 'apply'
