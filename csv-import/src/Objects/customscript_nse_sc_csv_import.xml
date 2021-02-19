@@ -1,0 +1,54 @@
+<scheduledscript scriptid="customscript_nse_sc_csv_import">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>NSE Scheduled CSV Import</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/CSV Import/nse_sd_sc_csv_import.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_nse_sc_csv_import_deploy_map">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Deployment Mapping</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_nse_sc_csv_import">
+      <custscript_nse_sc_csv_import_deploy_map>{&quot;0&quot;:[&quot;customdeploy_nse_mr_csv_import&quot;]}</custscript_nse_sc_csv_import_deploy_map>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>NSE Scheduled CSV Import</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2021-02-18</startdate>
+          <starttime>18:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
