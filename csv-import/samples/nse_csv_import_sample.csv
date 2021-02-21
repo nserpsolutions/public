@@ -1,7 +1,0 @@
-External ID,Type,ID,Name,Subsidiary,Legal Name,Email,Currency,Date,Bank Account,Memo,Class,Amount
-1,SrvItem,NSESI1,Free Service,2,,,,,,,,
-2,Vendor,,NS ERP Vendor,2,NS ERP CZ,info@nserpsolutions.com,Czech Koruna,,,,,
-2,Vendor,,NS ERP Vendor,2,NS ERP CZ,info@nserpsolutions.com,Euro,,,,,
-3,Journal,,,,,,Euro,19/02/2021,Accounts Receivable,Charges,Software,-100
-3,Journal,,,,,,Euro,19/02/2021,Advances Paid,,,25
-3,Journal,,,,,,Euro,19/02/2021,Accounts Payable,,Software,75
