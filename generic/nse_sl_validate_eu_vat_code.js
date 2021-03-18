@@ -55,7 +55,7 @@ define(['N/xml', 'N/https', 'N/ui/serverWidget'],
         }
 
         /**
-         * @function validateEuVatCode
+         * @function getEuVatCodeDetails
          * @description Sends a request to VIES to validate EU VAT Code
          *
          * @param {string} countryCode - 2 letter country ISO Code
