@@ -2,7 +2,7 @@ SELECT SUM(TAL.amount) AS GLAmount,
   A.acctnumber AS AccountNumber, 
   A.fullname AS AccountName,
   BUILTIN.DF(TL.department) AS Department,
-  BUILTIN.DF(TL.class) AS WebSite,
+  BUILTIN.DF(TL.class) AS Class,
   BUILTIN.DF(TL.location) AS Location
 FROM transactionaccountingline TAL 
 LEFT JOIN transaction T
@@ -30,7 +30,7 @@ UNION SELECT SUM(-TAL.amount) AS GLAmount,
   '<RetainedEarningsAccountNumber>' AS AccountNumber, /*Account Number of the Retained Earnings Account which is calculated separately.*/
   'Retained Earnings' AS AccountName,
   BUILTIN.DF(TL.department) AS Department,
-  BUILTIN.DF(TL.class) AS WebSite,
+  BUILTIN.DF(TL.class) AS Class,
   BUILTIN.DF(TL.location) AS Location
 FROM transactionaccountingline TAL 
 LEFT JOIN transaction T
