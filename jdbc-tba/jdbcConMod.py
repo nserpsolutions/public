@@ -21,7 +21,7 @@ import jpype.imports
 
 def createJdbcConnection(accountId, roleId, username, password): 
 	jdbcUri = f'jdbc:ns://{accountId.lower().replace("_", "-")}.connect.api.netsuite.com:1708;ServerDataSource=NetSuite2.com;Encrypted=1;CustomProperties=(AccountID={accountId};RoleID={roleId});'
-	classPath = '/Users/sdogru/Projects/NetSuiteJDBCDrivers/NQjc.jar'
+	classPath = '/Users/sdogru/Projects/NetSuiteJDBCDrivers/NQjc.jar' # Update PATH to NetSuite JDBC Driver
 
 	jpype.addClassPath(classPath)
 	jpype.startJVM()
